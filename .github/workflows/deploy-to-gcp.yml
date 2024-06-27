@@ -34,5 +34,5 @@ jobs:
         gcloud run deploy flask-project \
           --image gcr.io/flask-project-427715-427716/flaskapp:latest \
           --platform managed \
-          --region us-central1-b \
+          --region us-central1 \
           --allow-unauthenticated  # Adjust as per your requirements
