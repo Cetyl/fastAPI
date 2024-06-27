@@ -32,7 +32,7 @@ jobs:
     - name: Deploy to Google Cloud Run
       run: |
         gcloud run deploy flask-project \
-          --image gcr.io/flask-project-427715-427716/flaskapp:latest \
+          --image gcr.io/flask-project-427715-427716/flaskapp \
           --platform managed \
           --region us-central1 \
           --allow-unauthenticated  # Adjust as per your requirements
