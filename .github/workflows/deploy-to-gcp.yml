@@ -31,8 +31,10 @@ jobs:
 
     - name: Deploy to Google Cloud Run
       run: |
-        gcloud run deploy flask-project \
-          --image gcr.io/flask-project-427715-427716/flaskapp \
-          --platform managed \
-          --region us-central1 \
-          --allow-unauthenticated  # Adjust as per your requirements
+        gcloud run deploy flaskapp \
+        --image=gcr.io/flask-project-427715-427716/flaskapp@sha256:425545d05d4e443f30a2a21c18c4b3deb259e87d91ec186e39ca4bf47d33c597 \
+        --allow-unauthenticated \
+        --port=80 \
+        --service-account=866329531882-compute@developer.gserviceaccount.com \
+        --region=us-central1 \
+        --project=flask-project-427715-427716
