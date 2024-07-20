@@ -12,7 +12,8 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout your Git repository
-                git branch: 'main', url: 'https://github.com/Cetyl/fastAPI.git'
+                sh 'echo passed'
+                //git branch: 'main', url: 'https://github.com/Cetyl/fastAPI.git'
             }
         }
         
