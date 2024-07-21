@@ -108,7 +108,9 @@ In your GitHub repository settings, go to "Secrets" and add the following secret
 
 ## Final Steps:
 1. Commit and push your changes to GitHub. This will trigger the GitHub Action to build and deploy your FastAPI app to Cloud Run.
-2.Check the GitHub Actions tab to monitor the deployment process.
+
+2. Check the GitHub Actions tab to monitor the deployment process.
+
 3. Once deployed, access your application via the Cloud Run URL.
    
 This setup ensures that changes pushed to your main branch will automatically trigger a build and deployment process to keep your application up-to-date on Google Cloud Run.
